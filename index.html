@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RDU Enterprises — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="left">
+      <img src="images/company-logo.png" alt="Company Logo" class="logo" />
+    </div>
+    <div class="right">
+      <button class="top-btn" id="topContactBtn">Contact Info</button>
+      <button class="top-btn" id="topQuoteBtn">Quotation</button>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <nav id="topNav" class="top-nav">
+        <a href="#" data-nav="about">About Us</a>
+        <a href="#" data-nav="contact">Contact Us</a>
+        <a href="#" data-nav="career">Career</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="hero">
+      <h1>Welcome to RDU Enterprises</h1>
+      <p class="lead">A sleek, black-royal themed demo website — responsive and elegant.</p>
+    </section>
+
+    <section id="images" class="image-list">
+  <div class="image-item">
+    <img src="images/img1.jpg" alt="Image 1" />
+    <p><strong>Image 1:</strong> Description or definition for image 1.</p>
+  </div>
+
+  <div class="image-item">
+    <img src="images/img2.jpg" alt="Image 2" />
+    <p><strong>Image 2:</strong> Description or definition for image 2.</p>
+  </div>
+
+  <div class="image-item">
+    <img src="images/img3.jpg" alt="Image 3" />
+    <p><strong>Image 3:</strong> Description or definition for image 3.</p>
+  </div>
+
+  <div class="image-item">
+    <img src="images/img4.jpg" alt="Image 4" />
+    <p><strong>Image 4:</strong> Description or definition for image 4.</p>
+  </div>
+
+  <div class="image-item">
+    <img src="images/img5.jpg" alt="Image 5" />
+    <p><strong>Image 5:</strong> Description or definition for image 5.</p>
+  </div>
+</section>
+
+    
+  </main>
+
+  <footer id="contactSection" class="site-footer">
+    <div class="contact-cards">
+      <div><strong>Mobile:</strong> +91-XXXXXXXXXX</div>
+      <div><strong>Email:</strong> contact@royalcompany.com</div>
+      <div><strong>Facebook:</strong> facebook.com/royalcompany</div>
+    </div>
+    
+  </footer>
+
+  <!-- Modal for Quotation / Google Form -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <h3>Quotation</h3>
+
+      <div class="modal-tabs">
+        <button class="tab active" data-tab="embed">Embedded Google Form</button>
+        <button class="tab" data-tab="quick">Quick Quote (Demo)</button>
+      </div>
+
+      <div class="tab-body" id="embed">
+        <!-- Replace the src below with your Google Form 'embed' URL -->
+        <iframe src="https://docs.google.com/forms/d/e/REPLACE_WITH_YOUR_FORM_ID/viewform?embedded=true" frameborder="0" style="width:100%;min-height:600px;"></iframe>
+        <p class="note">Note: Due to browser security, this demo cannot detect submission inside the embedded Google Form. Use the Quick Quote tab below to test the "We will callback shortly" message locally, or open your Google Form in a new tab to see Google Form's confirmation screen.</p>
+        <p><a href="#" id="openGoogleForm" target="_blank">Open Google Form in new tab</a></p>
+      </div>
+
+      <div class="tab-body hidden" id="quick">
+        <form id="quickQuoteForm">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <div id="quoteMessage" class="quote-message hidden">We will callback shortly.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
