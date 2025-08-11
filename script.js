@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function(){
   // Open Google form link (replace placeholder URL if user adds)
   openGoogleForm.addEventListener('click', function(e){
     // replace with your actual Google Form URL if desired
-    openGoogleForm.href = "https://docs.google.com/forms/d/e/https://docs.google.com/forms/d/e/1FAIpQLSeLF0WMZIBUmyOS0RFdJDeTRuFMJoEbLCOkwkVY1moMI2cSeg/viewform";
+    openGoogleForm.href = "https://docs.google.com/forms/d/e/1FAIpQLSeLF0WMZIBUmyOS0RFdJDeTRuFMJoEbLCOkwkVY1moMI2cSeg/viewform";
   });
 
   // Contact buttons scroll to footer/contact section
