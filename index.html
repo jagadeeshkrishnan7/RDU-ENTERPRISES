@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>RDU Enterprises — Home</title>
+  <title>RUD ENTERPRISES — Home</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -28,34 +28,36 @@
 
   <main class="content">
     <section class="hero">
-      <h1>Welcome to RDU Enterprises</h1>
-      <p class="lead">A sleek, black-royal themed demo website — responsive and elegant.</p>
+      <h1>RUD ENTERPRISES</h1>
+      <p class="lead">Anything in steel</p>
+	   <p class="lead">We Manufacture and deliver High-Quality Products on-time</p>
     </section>
-
+ <p class="expert-title">We are expert in </p>
+ 
     <section id="images" class="image-list">
   <div class="image-item">
     <img src="images/img1.jpg" alt="Image 1" />
-    <p><strong>Image 1:</strong> Description or definition for image 1.</p>
+    <p><strong>Design & Engineering:</strong> Description or definition for image 1.</p>
   </div>
 
   <div class="image-item">
     <img src="images/img2.jpg" alt="Image 2" />
-    <p><strong>Image 2:</strong> Description or definition for image 2.</p>
+    <p><strong>Project Management:</strong> Description or definition for image 2.</p>
   </div>
 
   <div class="image-item">
     <img src="images/img3.jpg" alt="Image 3" />
-    <p><strong>Image 3:</strong> Description or definition for image 3.</p>
+    <p><strong>Procurement Process:</strong> Description or definition for image 3.</p>
   </div>
 
   <div class="image-item">
     <img src="images/img4.jpg" alt="Image 4" />
-    <p><strong>Image 4:</strong> Description or definition for image 4.</p>
+    <p><strong>Fabrication & Machining Process:</strong> Description or definition for image 4.</p>
   </div>
 
   <div class="image-item">
     <img src="images/img5.jpg" alt="Image 5" />
-    <p><strong>Image 5:</strong> Description or definition for image 5.</p>
+    <p><strong>Load out & Transport Management:</strong> Description or definition for image 5.</p>
   </div>
 </section>
 
@@ -64,9 +66,10 @@
 
   <footer id="contactSection" class="site-footer">
     <div class="contact-cards">
-      <div><strong>Mobile:</strong> +91-XXXXXXXXXX</div>
-      <div><strong>Email:</strong> contact@royalcompany.com</div>
-      <div><strong>Facebook:</strong> facebook.com/royalcompany</div>
+      <div><strong>Mobile:</strong> +91-6380241434/9500355625</div>
+      <div><strong>Email:</strong> <a href="mailto:rud.7enterprises@gmail.com">rud.7enterprises@gmail.com</a></div>
+      <div><strong>Office Address:</strong> 2/348 Avvaiyar Street,M.A.Nagar,Redhills,Chennai-600052</div>
+	  <div><strong>Works Address:</strong> 182/3B2,Old Bypass Road,Samireddy Kandigai,Thervazhi Post,Gummidipoondi-601201</div>
     </div>
     
   </footer>
@@ -77,36 +80,17 @@
       <button class="modal-close" id="modalClose">&times;</button>
       <h3>Quotation</h3>
 
-      <div class="modal-tabs">
-        <button class="tab active" data-tab="embed">Embedded Google Form</button>
-        <button class="tab" data-tab="quick">Quick Quote (Demo)</button>
-      </div>
-
       <div class="tab-body" id="embed">
         <!-- Replace the src below with your Google Form 'embed' URL -->
-        <iframe src="https://docs.google.com/forms/d/e/REPLACE_WITH_YOUR_FORM_ID/viewform?embedded=true" frameborder="0" style="width:100%;min-height:600px;"></iframe>
-        <p class="note">Note: Due to browser security, this demo cannot detect submission inside the embedded Google Form. Use the Quick Quote tab below to test the "We will callback shortly" message locally, or open your Google Form in a new tab to see Google Form's confirmation screen.</p>
-        <p><a href="#" id="openGoogleForm" target="_blank">Open Google Form in new tab</a></p>
+         <iframe 
+    src="https://docs.google.com/forms/d/e/1FAIpQLSeLF0WMZIBUmyOS0RFdJDeTRuFMJoEbLCOkwkVY1moMI2cSeg/viewform?embedded=true" 
+    frameborder="0" 
+    style="width:100%;min-height:600px;">
+  </iframe>
+        <button class="form-btn" id="quoteBackBtn">Back</button>
       </div>
 
-      <div class="tab-body hidden" id="quick">
-        <form id="quickQuoteForm">
-          <label>
-            Name
-            <input type="text" name="name" required />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" required />
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="4" required></textarea>
-          </label>
-          <button type="submit" class="submit-btn">Submit</button>
-        </form>
-        <div id="quoteMessage" class="quote-message hidden">We will callback shortly.</div>
-      </div>
+     
 
     </div>
   </div>

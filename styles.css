@@ -34,7 +34,7 @@ body{
 .logo{ height:48px; width:auto; }
 .right{ display:flex; align-items:center; gap:12px; }
 
-.top-btn, .bottom-btn, .submit-btn {
+.top-btn, .form-btn, .submit-btn {
   background:transparent;
   border:2px solid var(--accent);
   color:var(--accent);
@@ -43,7 +43,7 @@ body{
   cursor:pointer;
   font-weight:600;
 }
-.top-btn:hover, .bottom-btn:hover { background:rgba(43,110,246,0.06); }
+.top-btn:hover, .form-btn:hover { background:rgba(43,110,246,0.06); }
 
 .hamburger{ width:36px; height:28px; display:flex; flex-direction:column; justify-content:space-between; cursor:pointer; margin-left:8px; }
 .hamburger span{ display:block; height:3px; background:var(--muted); border-radius:2px; }
@@ -141,4 +141,47 @@ input, textarea{ width:100%; padding:10px; margin-top:6px; border-radius:8px; bo
   margin-top: 10px;
   font-size: 1.1rem;
   color: #ddd;
+}
+
+.expert-title {
+  font-family: 'Georgia', serif;   /* different font */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #cccccc;                  /* light grey */
+  margin-top: 20px;
+}
+.image-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-item img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.image-item p {
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.image-item:hover {
+  transform: scale(1.05); /* slightly bigger container */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.image-item:hover img {
+  transform: scale(1.05); /* zoom image */
+}
+
+.image-item:hover p {
+  transform: scale(1.05); /* enlarge description */
+}
+
+.site-footer a {
+  color: #00bfff; /* light blue link */
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
 }
